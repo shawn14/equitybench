@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  get 'home/forex'
+
   get 'home/market_overview'
 
   get 'home/cryptocurrencies'

@@ -1,5 +1,3 @@
-
-
 <br/><br/>
 
 <% if @stock %>
@@ -10,25 +8,28 @@
   </div>
   <div class="panel-body">
     
-  <div class="col-md-4">
-   <h1><%= @stock.l %></h1><br/>
+      <div class="col-md-4">
+       <h1><%= @stock.l %></h1><br/>
    
-   <strong>Symbol:</strong> <%= @stock.symbol %><br/>
-   <strong>Market Cap: </strong><%= @stock.mc %><br/>
-   <strong>Earnings Per Share: </strong><%= @stock.eps %><br/>
-   <strong>Price/Earning Ratio: </strong><%= @stock.pe %><br/>
-   <strong>Dividend Yield: </strong><%= @stock.dy %>%<br/>
-   <strong>Stock Open: </strong><%= @stock.op %><br/>
-   <strong>Year High: </strong><%= @stock.hi52 %><br/>
-   <strong>Year Low: </strong><%= @stock.lo52 %><br/>
-   <strong>Volume: </strong><%= @stock.vo %><br/>
-   <strong>Avg. Volume: </strong><%= @stock.avvo %><br/>
-   </div>
+       <strong>Symbol:</strong> <%= @stock.symbol %><br/>
+       <strong>Market Cap: </strong><%= @stock.mc %><br/>
+       <strong>Earnings Per Share: </strong><%= @stock.eps %><br/>
+       <strong>Price/Earning Ratio: </strong><%= @stock.pe %><br/>
+       <strong>Dividend Yield: </strong><%= @stock.dy %>%<br/>
+       <strong>Stock Open: </strong><%= @stock.op %><br/>
+       <strong>Year High: </strong><%= @stock.hi52 %><br/>
+       <strong>Year Low: </strong><%= @stock.lo52 %><br/>
+       <strong>Volume: </strong><%= @stock.vo %><br/>
+       <strong>Avg. Volume: </strong><%= @stock.avvo %><br/>
+       </div>
+  </div>
   
 
-<div class="col-md-8"><br/><br/><br/><br/><br/>
-<p align="justify"><%= @stock.summary[0]['overview'] %></p>
+    <div class="col-md-8"><br/><br/><br/><br/><br/>
+    <p align="justify"><%= @stock.summary[0]['overview'] %></p>
+    </div>
 </div>
+
 
 <% elsif render 'home/chart' %>
 <%= render 'home/chart' %>
