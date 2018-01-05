@@ -21,7 +21,6 @@
 
       <ul class="nav navbar-nav navbar-right">
     <li><%= link_to "Market", home_market_overview_path %></li>
-    <li><%= link_to "Bitcoin", home_bitcoin_path %></li>
     <li><%= link_to "Cryptocurrency", home_cryptocurrencies_path %></li>
     <li><%= link_to "Screener", home_stock_screener_path %></li>
      <li><%= link_to "Forex", home_forex_path %></li>
@@ -30,7 +29,7 @@
         <% if user_signed_in? %>
         
         <li><%= link_to "Watch List", stocks_path %></li>
-        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %>
         <li><%= link_to "Update", edit_user_registration_path %></li>
           
         <% else %>
