@@ -5,6 +5,7 @@
       <th>Ticker</th>
       <th>Current Price</th>
       <th>Market Cap</th>
+      <th>PE Ratio</th>
       <th></th>
       
       
@@ -20,6 +21,7 @@
           <td><%= @stock.symbol %></td>
           <td><%= @stock.l %></td>
           <td><%= @stock.mc %></td>
+          <td><%= @stock.pe %></td>
           <td><%= link_to 'Remove', stock, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default btn-xs" %></td>
           
           

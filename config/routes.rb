@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'home/market_overview'
+
+  get 'home/cryptocurrencies'
+
+  get 'home/stock_screener'
+
+  get 'home/bitcoin'
+
   resources :stocks
   devise_for :users
   get 'home/about'
